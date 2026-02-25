@@ -1376,6 +1376,8 @@ module.exports = grammar({
       $.delete_statement,
       $.display_statement,
       $.divide_statement,
+      $.entry_statement,
+      $.exec_statement,
       $.exit_statement,
       $.goback_statement,
       $.goto_statement,
@@ -1661,6 +1663,35 @@ module.exports = grammar({
     call_statement: $ => seq(
       $._call_header
     ),
+
+    entry_statement: $ => seq(
+      $._ENTRY,
+      field('name', $._alnum_or_id),
+      field('using', optional(seq(
+        choice($._USING, $._CHAINING),
+        repeat1($._call_param)
+      ))),
+      field('returning', optional(seq(
+        choice($._RETURNING, $._GIVING),
+        $._identifier
+      )))
+    ),
+
+    // Generic embedded block for EXEC SQL / EXEC DLI / EXEC CICS style syntax.
+    // Content is intentionally permissive until END-EXEC.
+    exec_statement: $ => seq(
+      $._EXEC,
+      repeat($._exec_item),
+      optional($._END_EXEC)
+    ),
+
+    _exec_item: $ => choice(
+      $._LITERAL,
+      $._WORD,
+      $._exec_symbol
+    ),
+
+    _exec_symbol: $ => token(/[^\sA-Za-z0-9'".]/),
 
     _call_header: $ => seq(
       $._CALL,
@@ -2961,6 +2992,7 @@ module.exports = grammar({
     _END_DELETE: $ => /[eE][nN][dD]-[dD][eE][lL][eE][tT][eE]/,
     _END_DISPLAY: $ => /[eE][nN][dD]-[dD][iI][sS][pP][lL][aA][yY]/,
     _END_DIVIDE: $ => /[eE][nN][dD]-[dD][iI][vV][iI][dD][eE]/,
+    _END_EXEC: $ => token(prec(2, /[eE][nN][dD]-[eE][xX][eE][cC]/)),
     _END_EVALUATE: $ => /[eE][nN][dD]-[eE][vV][aA][lL][uU][aA][tT][eE]/,
     _END_FUNCTION: $ => /[eE][nN][dD]-[fF][uU][nN][cC][tT][iI][oO][nN]/,
     _END_IF: $ => /[eE][nN][dD]-[iI][fF]/,
@@ -2989,6 +3021,7 @@ module.exports = grammar({
     _ERASE: $ => /[eE][rR][aA][sS][eE]/,
     _ERROR: $ => /[eE][rR][rR][oO][rR]/,
     _ESCAPE: $ => /[eE][sS][cC][aA][pP][eE]/,
+    _EXEC: $ => token(prec(2, /[eE][xX][eE][cC]/)),
     _EVALUATE: $ => /[eE][vV][aA][lL][uU][aA][tT][eE]/,
     _EVENT_STATUS: $ => /[eE][vV][eE][nN][tT]-[sS][tT][aA][tT][uU][sS]/,
     _EXCEPTION: $ => /[eE][xX][cC][eE][pP][tT][iI][oO][nN]/,

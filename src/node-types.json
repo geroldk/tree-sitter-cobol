@@ -4389,21 +4389,6 @@
     }
   },
   {
-    "type": "end_function",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "program_name",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "end_program",
     "named": true,
     "fields": {},
@@ -4422,6 +4407,82 @@
     "type": "entry_name",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "entry_statement",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "h_string",
+            "named": true
+          },
+          {
+            "type": "n_string",
+            "named": true
+          },
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "qualified_word",
+            "named": true
+          },
+          {
+            "type": "refmod",
+            "named": true
+          },
+          {
+            "type": "string",
+            "named": true
+          },
+          {
+            "type": "subref",
+            "named": true
+          },
+          {
+            "type": "x_string",
+            "named": true
+          }
+        ]
+      },
+      "returning": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "qualified_word",
+            "named": true
+          },
+          {
+            "type": "refmod",
+            "named": true
+          },
+          {
+            "type": "subref",
+            "named": true
+          }
+        ]
+      },
+      "using": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "call_param_arg",
+            "named": true
+          },
+          {
+            "type": "call_param_omitted",
+            "named": true
+          }
+        ]
+      }
+    }
   },
   {
     "type": "environment_division",
@@ -4500,6 +4561,37 @@
       "types": [
         {
           "type": "qualified_word",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exec_statement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "h_string",
+          "named": true
+        },
+        {
+          "type": "n_string",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        },
+        {
+          "type": "x_string",
           "named": true
         }
       ]
@@ -5389,25 +5481,6 @@
         },
         {
           "type": "x_string",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "function_division",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "as_literal",
-          "named": true
-        },
-        {
-          "type": "program_name",
           "named": true
         }
       ]
@@ -9337,11 +9410,19 @@
           "named": true
         },
         {
+          "type": "entry_statement",
+          "named": true
+        },
+        {
           "type": "eop",
           "named": true
         },
         {
           "type": "evaluate_header",
+          "named": true
+        },
+        {
+          "type": "exec_statement",
           "named": true
         },
         {
@@ -9664,11 +9745,19 @@
           "named": true
         },
         {
+          "type": "entry_statement",
+          "named": true
+        },
+        {
           "type": "eop",
           "named": true
         },
         {
           "type": "evaluate_header",
+          "named": true
+        },
+        {
+          "type": "exec_statement",
           "named": true
         },
         {
@@ -12146,6 +12235,7 @@
   {
     "type": "start",
     "named": true,
+    "root": true,
     "fields": {},
     "children": {
       "multiple": true,
