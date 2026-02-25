@@ -831,6 +831,11 @@
     "fields": {}
   },
   {
+    "type": "RETURN_CODE",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "REVERSE_FUNC",
     "named": true,
     "fields": {}
@@ -1179,6 +1184,10 @@
       "required": true,
       "types": [
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "at_line_column",
           "named": true
         },
@@ -1258,6 +1267,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -1379,6 +1392,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -1495,6 +1512,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -1584,6 +1605,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -1687,6 +1712,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -1841,6 +1870,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -1912,6 +1945,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -2153,6 +2190,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "ROUNDED",
           "named": true
         },
@@ -2338,6 +2379,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -2495,6 +2540,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "SPACE",
           "named": true
         },
@@ -2613,6 +2662,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -2644,6 +2697,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "function_",
             "named": true
@@ -2717,6 +2774,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -3001,6 +3062,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -3082,6 +3147,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -3198,6 +3267,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -3225,6 +3298,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -3700,6 +3777,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "REVERSE_VIDEO",
           "named": true
         },
@@ -3776,6 +3857,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -3883,6 +3968,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -4004,6 +4093,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -4120,6 +4213,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -4209,6 +4306,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -4305,6 +4406,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -4417,6 +4522,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "h_string",
             "named": true
           },
@@ -4454,6 +4563,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -4778,6 +4891,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -5122,6 +5239,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "SPACE",
           "named": true
         },
@@ -5230,6 +5351,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -5361,6 +5486,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -5519,6 +5648,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -5743,6 +5876,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -5889,6 +6026,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -5962,6 +6103,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -6029,6 +6174,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -6109,6 +6258,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -6226,6 +6379,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -6347,6 +6504,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -6434,6 +6595,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -6552,6 +6717,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -6657,6 +6826,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -6997,6 +7170,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -7341,6 +7518,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -7376,6 +7557,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -7472,6 +7657,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -7590,6 +7779,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -7764,6 +7957,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -7843,6 +8040,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -7953,6 +8154,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -8507,6 +8712,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "function_",
             "named": true
           },
@@ -8685,6 +8894,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -8767,6 +8980,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -8839,6 +9056,10 @@
       "multiple": true,
       "required": true,
       "types": [
+        {
+          "type": "RETURN_CODE",
+          "named": true
+        },
         {
           "type": "qualified_word",
           "named": true
@@ -8929,6 +9150,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -9056,6 +9281,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -9171,6 +9400,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -10123,6 +10356,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -10140,6 +10377,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -10307,6 +10548,10 @@
       "required": true,
       "types": [
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "qualified_word",
           "named": true
         },
@@ -10343,6 +10588,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -10473,6 +10722,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -10625,6 +10878,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -10735,6 +10992,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -10812,6 +11073,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -10954,6 +11219,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -10995,6 +11264,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -11131,6 +11404,10 @@
       "required": true,
       "types": [
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "ZERO",
           "named": true
         },
@@ -11185,6 +11462,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "VARYING",
             "named": true
@@ -11380,6 +11661,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -11447,6 +11732,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -11541,6 +11830,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -11576,6 +11869,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -11640,6 +11937,10 @@
         "multiple": true,
         "required": false,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "h_string",
             "named": true
@@ -11715,6 +12016,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -11756,6 +12061,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -11820,6 +12129,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -12257,6 +12570,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -12353,6 +12670,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -12435,6 +12756,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -12510,6 +12835,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -12598,6 +12927,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "SIZE",
           "named": true
         },
@@ -12679,6 +13012,10 @@
         "required": true,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -12738,6 +13075,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -12859,6 +13200,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -12968,6 +13313,10 @@
         },
         {
           "type": "QUOTE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -13086,6 +13435,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -13179,6 +13532,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {
@@ -13355,6 +13712,10 @@
             "named": true
           },
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "SPACE",
             "named": true
           },
@@ -13425,6 +13786,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -13443,6 +13808,10 @@
         "required": false,
         "types": [
           {
+            "type": "RETURN_CODE",
+            "named": true
+          },
+          {
             "type": "qualified_word",
             "named": true
           },
@@ -13460,6 +13829,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -13484,6 +13857,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -13530,6 +13907,10 @@
         "multiple": true,
         "required": true,
         "types": [
+          {
+            "type": "RETURN_CODE",
+            "named": true
+          },
           {
             "type": "qualified_word",
             "named": true
@@ -13724,6 +14105,10 @@
         },
         {
           "type": "PROCEDURE",
+          "named": true
+        },
+        {
+          "type": "RETURN_CODE",
           "named": true
         },
         {
@@ -14037,6 +14422,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "REVERSE_VIDEO",
           "named": true
         },
@@ -14148,6 +14537,10 @@
       "required": true,
       "types": [
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "qualified_word",
           "named": true
         },
@@ -14212,6 +14605,10 @@
           "named": true
         },
         {
+          "type": "RETURN_CODE",
+          "named": true
+        },
+        {
           "type": "ZERO",
           "named": true
         },
@@ -14260,6 +14657,10 @@
           },
           {
             "type": "QUOTE",
+            "named": true
+          },
+          {
+            "type": "RETURN_CODE",
             "named": true
           },
           {

@@ -939,6 +939,7 @@ module.exports = grammar({
     ),
 
     _identifier: $ => prec.right(choice(
+      $.RETURN_CODE,
       $.qualified_word,
       seq($.qualified_word, $.subref),
       seq($.qualified_word, $.refmod),
@@ -3217,6 +3218,7 @@ module.exports = grammar({
     _REQUIRED: $ => /[rR][eE][qQ][uU][iI][rR][eE][dD]/,
     _RESERVE: $ => /[rR][eE][sS][eE][rR][vV][eE]/,
     _RETURN: $ => /[rR][eE][tT][uU][rR][nN]/,
+    _RETURN_CODE: $ => /[rR][eE][tT][uU][rR][nN]-[cC][oO][dD][eE]/,
     _RETURNING: $ => /[rR][eE][tT][uU][rR][nN][iI][nN][gG]/,
     _REVERSE_FUNC: $ => /[rR][eE][vV][eE][rR][sS][eE]-[fF][uU][nN][cC]/,
     _REVERSE_VIDEO: $ => /[rR][eE][vV][eE][rR][sS][eE]-[vV][iI][dD][eE][oO]/,
@@ -3320,7 +3322,7 @@ module.exports = grammar({
     _WHEN_COMPILED_FUNC: $ => /[wW][hH][eE][nN]-[cC][oO][mM][pP][iI][lL][eE][dD]-[fF][uU][nN][cC]/,
     _WHEN_OTHER: $ => /[wW][hH][eE][nN][ \t\n]+[oO][tT][hH][eE][rR]/,
     _WITH: $ => /[wW][iI][tT][hH]/,
-    _WORD: $ => /([0-9][a-zA-Z0-9-]*[a-zA-Z][a-zA-Z0-9-]*)|([a-zA-Z][a-zA-Z0-9-]*)/,
+    _WORD: $ => /([0-9][a-zA-Z0-9-]*[a-zA-Z][a-zA-Z0-9-]*)|([a-zA-Z][a-zA-Z0-9-]{0,9})|([a-zA-Z][a-zA-Z0-9-]{11,})|([A-QSa-qs-z][a-zA-Z0-9-]{10})|([Rr][A-DF-Za-df-z0-9-][a-zA-Z0-9-]{9})|([Rr][Ee][A-SU-Za-su-z0-9-][a-zA-Z0-9-]{8})|([Rr][Ee][Tt][A-TV-Za-tv-z0-9-][a-zA-Z0-9-]{7})|([Rr][Ee][Tt][Uu][A-QSa-qs-z0-9-][a-zA-Z0-9-]{6})|([Rr][Ee][Tt][Uu][Rr][A-MO-Za-mo-z0-9-][a-zA-Z0-9-]{5})|([Rr][Ee][Tt][Uu][Rr][Nn][a-zA-Z0-9][a-zA-Z0-9-]{4})|([Rr][Ee][Tt][Uu][Rr][Nn]-[A-BD-Za-bd-z0-9-][a-zA-Z0-9-]{3})|([Rr][Ee][Tt][Uu][Rr][Nn]-[Cc][A-NP-Za-np-z0-9-][a-zA-Z0-9-]{2})|([Rr][Ee][Tt][Uu][Rr][Nn]-[Cc][Oo][A-CE-Za-ce-z0-9-][a-zA-Z0-9-])|([Rr][Ee][Tt][Uu][Rr][Nn]-[Cc][Oo][Dd][A-DF-Za-df-z0-9-])/,
     _WORDS: $ => /[wW][oO][rR][dD][sS]/,
     _WORKING_STORAGE: $ => /[wW][oO][rR][kK][iI][nN][gG]-[sS][tT][oO][rR][aA][gG][eE]/,
     _YYYYDDD: $ => /[yY][yY][yY][yY][dD][dD][dD]/,
@@ -3669,6 +3671,7 @@ module.exports = grammar({
     REQUIRED: $ => $._REQUIRED,
     //RESERVE: $ => $._RESERVE,
     //RETURN: $ => $._RETURN,
+    RETURN_CODE: $ => $._RETURN_CODE,
     //RETURNING: $ => $._RETURNING,
     REVERSE_FUNC: $ => $._REVERSE_FUNC,
     REVERSE_VIDEO: $ => $._REVERSE_VIDEO,
