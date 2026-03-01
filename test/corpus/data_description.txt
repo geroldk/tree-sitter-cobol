@@ -140,3 +140,53 @@ computational
           (usage_clause
             (COMPUTATIONAL)))))
     (procedure_division)))
+
+====================================
+long data names and condition names
+====================================
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. A.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77  KZ-UNDERLYING PIC X VALUE 'M'.
+           88  MIT-UNDERLYING VALUE 'M'.
+       77  KZ-ZEITMESSUNG PIC X VALUE 'J'.
+           88  MIT-ZEITMESSUNG VALUE 'J'.
+       PROCEDURE DIVISION.
+---
+
+(start
+  (program_definition
+    (identification_division
+      (program_name))
+    (data_division
+      (working_storage_section
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_x))
+          (value_clause
+            (value_item
+              (string))))
+        (data_description
+          (level_number)
+          (entry_name)
+          (value_clause
+            (value_item
+              (string))))
+        (data_description
+          (level_number)
+          (entry_name)
+          (picture_clause
+            (picture_x))
+          (value_clause
+            (value_item
+              (string))))
+        (data_description
+          (level_number)
+          (entry_name)
+          (value_clause
+            (value_item
+              (string))))))
+    (procedure_division)))
