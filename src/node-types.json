@@ -3398,6 +3398,7 @@
   {
     "type": "copy_statement",
     "named": true,
+    "extra": true,
     "fields": {
       "book": {
         "multiple": false,
@@ -7251,11 +7252,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
         {
-          "type": "record_description_list",
+          "type": "data_description",
           "named": true
         }
       ]
@@ -7266,11 +7267,11 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
         {
-          "type": "record_description_list",
+          "type": "data_description",
           "named": true
         }
       ]
@@ -15064,7 +15065,8 @@
   },
   {
     "type": "comment",
-    "named": true
+    "named": true,
+    "extra": true
   },
   {
     "type": "comment_entry",

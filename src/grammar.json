@@ -6328,8 +6328,23 @@
           "value": "."
         },
         {
-          "type": "SYMBOL",
-          "name": "record_description_list"
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "data_description"
+              },
+              {
+                "type": "REPEAT1",
+                "content": {
+                  "type": "STRING",
+                  "value": "."
+                }
+              }
+            ]
+          }
         }
       ]
     },
@@ -6349,8 +6364,23 @@
           "value": "."
         },
         {
-          "type": "SYMBOL",
-          "name": "record_description_list"
+          "type": "REPEAT",
+          "content": {
+            "type": "SEQ",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "data_description"
+              },
+              {
+                "type": "REPEAT1",
+                "content": {
+                  "type": "STRING",
+                  "value": "."
+                }
+              }
+            ]
+          }
         }
       ]
     },
@@ -19435,5 +19465,6 @@
     }
   ],
   "inline": [],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }

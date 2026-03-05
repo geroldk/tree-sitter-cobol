@@ -1223,12 +1223,12 @@ module.exports = grammar({
       $._LOCAL_STORAGE,
       $._SECTION,
       '.',
-      $.record_description_list
+      repeat(seq($.data_description, repeat1('.')))
     ),
 
     linkage_section: $ => seq(
       $._LINKAGE, $._SECTION, '.',
-      $.record_description_list
+      repeat(seq($.data_description, repeat1('.')))
     ),
 
     report_section: $ => /report_section/,
